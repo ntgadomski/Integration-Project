@@ -1,49 +1,83 @@
+/**
+ * 
+ * @author Nickolas Gadomski
+ *
+ */
 public class SeparateFile {
 
-	private String firstName = null;
-	private String lastName = null;
+  private String firstName = null;
+  private String lastName = null;
 
-	public String getFirstName() {
-		return firstName;
-	}
+  /**
+   * Gets First Name
+   * 
+   * @return firstName
+   */
+  public String getFirstName() {
+    return firstName;
+  }
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
+  /**
+   * Sets First Name
+   * 
+   * @param firstName
+   */
+  public void setFirstName(String firstName) {
+    this.firstName = firstName;
+  }
 
-	public String getLastName() {
-		return lastName;
-	}
+  /**
+   * Gets Last Name
+   * 
+   * @return lastName
+   */
+  public String getLastName() {
+    return lastName;
+  }
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
+  /**
+   * Sets Last Name
+   * 
+   * @param lastName
+   */
+  public void setLastName(String lastName) {
+    this.lastName = lastName;
+  }
 
-	public SeparateFile(String argA, String argB) {
+  /**
+   * initiates constructor
+   * 
+   * @param argA
+   * @param argB
+   */
+  public SeparateFile(String argA, String argB) {
 
-		this.firstName = argA;
-		this.lastName = argB;
+    this.firstName = argA;
+    this.lastName = argB;
 
-	} // constructor
+  }
 
-	public SeparateFile(String argA) {
+  /**
+   * @param argA
+   */
+  public SeparateFile(String argA) {// constructor
 
-		this.firstName = argA;
+    this.firstName = argA;
 
-	} // overloaded constructor
+  }
 
-	public SeparateFile() {
-		this.firstName = null;
-		this.lastName = null;
-	} // no args constructor
+  public SeparateFile() { // overloaded constructor
+    this.firstName = null;
+    this.lastName = null;
+  } // no args constructor
 
-	public void printName() {
+  public void printName() {
 
-		System.out.print(this.firstName + " ");
+    System.out.print(this.firstName + " ");
 
-		if (this.lastName != null)
-			System.out.print(lastName);
+    if (this.lastName != null)
+      System.out.print(lastName);
 
-	}
+  }
 
 }
